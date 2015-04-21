@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Final App</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div id="capture">
+		<div id="canvas">
+			<canvas id="preview"></canvas>
+		</div>
+
+		<div id="controls">
+			<input type="text" id="text-field" placeholder="Text Field" maxlength="30">
+			<p>Top</p>
+			<input type="radio" id="top" name="choice" value="top" checked>
+			<p>Bottom</p>
+			<input type="radio" id="bottom" name="choice" value="bottom">
+			<button id="set-text">Set Text</button>
+			<button id="take-photo">Take Photo</button>
+			<button id="save">Save Picture</button>
+		</div>
+	</div>
+
+	<div id="list">
+		<div id="openModal" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+			</div>
+		</div>
+		<ul id="imgList"></ul>
+	</div>
+
+	<footer>
+		<div id="tabs">
+			<button id="p1">Edit View</button>
+			<button id="p2">List View</button>
+		</div>
+	</footer>
+
+	<script src="cordova.js"></script>
+	<script src="js/hammer.min.js"></script>
+	<script src="js/list-view.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/take-photo.js"></script>
+</body>
+
+</html>
